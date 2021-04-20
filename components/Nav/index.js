@@ -1,4 +1,4 @@
-import style from "./nav.module.css";
+import style from "./nav.module.scss";
 import { Column, Logo, Unbold } from "./navstyled";
 
 const Nav = () => {
