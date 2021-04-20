@@ -1,0 +1,47 @@
+.wrapper {
+    background-color: white;
+    border-radius: 4px;
+    max-width: 790px;
+    min-width: 790px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.1);
+}
+
+.icon_input_wrapper {
+    width: 100%;
+    margin-left: 1.09375rem;
+    display: flex;
+}
+
+.searchbar_button {
+    background-color: #1E86FF;
+    border: none;
+    color: white;
+    font-weight: 500;
+    line-height: 18.75px;
+    margin: 4px;
+    padding: 12px 48px;
+    border-radius: 4px;
+    border: 2px solid #1E86FF;
+    &:hover {
+        cursor: pointer;
+        background-color: white;
+        border: 2px solid #1E86FF;
+        color: #1E86FF;
+    }
+}
+
+.searchbar_wrapper {
+    width: 100vw;
+    background-color: red;
+    height: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    background-image: url('/city.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
