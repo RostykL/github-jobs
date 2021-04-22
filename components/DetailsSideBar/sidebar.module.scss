@@ -3,7 +3,9 @@
 .sidebar {
   font-size: 0.875rem;
   width: 100%;
-  max-width: 16.844rem;
+  @include mediumScreen {
+    max-width: 16.844rem;
+  }
 
   a {
     color: rgba(30, 134, 255, 1);
