@@ -1,0 +1,9 @@
+@import "/styles/mixins";
+
+.main {
+  padding: 1.313rem 1.188rem 0.75rem 0.75rem;
+
+  @include mediumScreen() {
+    padding: 1.313rem 7.688rem 0.75rem 7.5rem;
+  }
+}
