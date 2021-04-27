@@ -10,4 +10,8 @@
   @include mediumScreen() {
     padding: 1.313rem 7.688rem 0.75rem 7.5rem;
   }
+
+  @include largeScreen() {
+    display: flex;
+  }
 }
