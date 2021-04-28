@@ -3,13 +3,17 @@
 .sidebar {
   font-size: 0.875rem;
   width: 100%;
-  @include mediumScreen {
+  @include largeScreen {
     max-width: 16.844rem;
   }
 
   a {
     color: rgba(30, 134, 255, 1);
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   h3 {

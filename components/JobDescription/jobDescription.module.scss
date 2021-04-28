@@ -1,0 +1,103 @@
+@import "/styles/mixins";
+
+.description {
+  font-family: "Roboto", sans-serif;
+  padding: 1.5rem 0 0.75rem 0;
+  @include largeScreen() {
+    padding: 0 0 0 4.813rem;
+  }
+
+  svg {
+    width: 15px;
+  }
+
+  .row1 {
+    .column {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      font-weight: 700;
+      color: rgba(51, 70, 128, 1);
+    }
+
+    .h2 {
+      display: inline-block;
+      font-size: 1.5rem;
+      line-height: 1.758rem;
+      text-transform: capitalize;
+      margin-right: 1.063rem;
+    }
+
+    .type {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 1.625rem;
+      min-width: 3.938rem;
+      font-size: 0.75rem;
+      border: 1px solid rgba(51, 70, 128, 1);
+      border-radius: 4px;
+      padding: 0 0.5rem;
+      text-transform: none;
+    }
+
+    .time {
+      display: flex;
+      align-items: center;
+      flex-basis: 100%;
+      font-weight: 500;
+      font-size: 0.75rem;
+      color: rgba(183, 188, 206, 1);
+      margin-top: 10px;
+
+      svg {
+        margin-right: 8px;
+        fill: rgba(183, 188, 206, 1);
+      }
+    }
+  }
+
+  .row2 {
+    margin-top: 2rem;
+
+    .column {
+      display: flex;
+      align-items: center;
+    }
+
+    .h3 {
+      font-weight: 700;
+      font-size: 1.125rem;
+      color: rgba(51, 70, 128, 1);
+    }
+
+    .logo {
+      width: 2.625rem;
+      height: 2.625rem;
+      border-radius: 3px;
+      margin-right: 0.75rem;
+    }
+
+    .location {
+      display: flex;
+      align-items: center;
+      color: rgba(185, 189, 207, 1);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: capitalize;
+
+      svg {
+        fill: rgba(185, 189, 207, 1);
+        margin-right: 0.469rem;
+      }
+    }
+  }
+
+  .row3 {
+    padding: 2.125rem 0;
+    color: rgba(51, 70, 128, 1);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    white-space: pre-line;
+  }
+}
