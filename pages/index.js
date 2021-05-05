@@ -5,7 +5,9 @@ import Nav from "../components/Nav/index";
 import styles from "../styles/Home.module.scss";
 import { default as searchbarstyles } from "../components/Searchbar/searchbar.module.scss";
 
-export default function Home() {
+import { getAll } from "../services/jobs";
+
+export default function Home({ jobs }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -25,3 +27,13 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps = async (context) => {
+  const allJobs = await getAll();
+
+  return {
+    props: {
+      jobs: allJobs,
+    },
+  };
+};
